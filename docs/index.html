@@ -120,7 +120,7 @@ gtag('config', 'G-KZP37T4JY3');
 <footer>
 <a class="brand" href="">DRY HUMPS</a>
 <p>Stories without names.</p>
-<p><a href="stories/">All stories</a> · <a href="sitemap.xml">Sitemap</a> · <a href="feed.xml">RSS</a></p>
+<p><a href="stories/">All stories</a> · <a href="about/">About</a> · <a href="sitemap.xml">Sitemap</a> · <a href="feed.xml">RSS</a></p>
 <p style="margin-top:12px;opacity:.7">© 2026 Dry Humps</p>
 </footer>
 </div>
@@ -157,6 +157,13 @@ document.getElementById("genBtn").addEventListener("click", () => {
   out.hidden = false;
   navigator.clipboard && navigator.clipboard.writeText(out.textContent);
 });
+</script>
+<div id="ck" style="position:fixed;bottom:0;left:0;right:0;background:#111;color:#eee;padding:14px;font-size:14px;text-align:center;z-index:99">
+We use cookies to improve the site. <a href="/privacy/" style="color:#c9a">Learn more</a>.
+<button onclick="document.getElementById('ck').style.display='none';localStorage.setItem('ck','1')" style="margin-left:12px;padding:6px 14px;cursor:pointer">OK</button>
+</div>
+<script>
+if(localStorage.getItem('ck'))document.getElementById('ck').style.display='none';
 </script>
 </body>
 </html>

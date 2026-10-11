@@ -82,7 +82,7 @@ const header = r => `<header class="topbar"><div class="topbar-in">
 const footer = r => `<footer>
 <a class="brand" href="${r}">DRY HUMPS</a>
 <p>Stories without names.</p>
-<p><a href="${r}stories/">All stories</a> · <a href="${r}sitemap.xml">Sitemap</a> · <a href="${r}feed.xml">RSS</a></p>
+<p><a href="${r}stories/">All stories</a> · <a href="${r}about/">About</a> · <a href="${r}sitemap.xml">Sitemap</a> · <a href="${r}feed.xml">RSS</a></p>
 <p style="margin-top:12px;opacity:.7">© ${new Date().getFullYear()} Dry Humps</p>
 </footer>`;
 
@@ -211,9 +211,17 @@ document.getElementById("genBtn").addEventListener("click", () => {
 });
 </script>`;
 
+  const cookieNotice = `<div id="ck" style="position:fixed;bottom:0;left:0;right:0;background:#111;color:#eee;padding:14px;font-size:14px;text-align:center;z-index:99">
+We use cookies to improve the site. <a href="/privacy/" style="color:#c9a">Learn more</a>.
+<button onclick="document.getElementById('ck').style.display='none';localStorage.setItem('ck','1')" style="margin-left:12px;padding:6px 14px;cursor:pointer">OK</button>
+</div>
+<script>
+if(localStorage.getItem('ck'))document.getElementById('ck').style.display='none';
+</script>`;
+
   write("index.html", page({
     relRoot: "", title: `${SITE.name} — ${SITE.tagline}`,
-    description: SITE.description, canonical: abs(""), jsonld, main, script
+    description: SITE.description, canonical: abs(""), jsonld, main, script: `${script}\n${cookieNotice}`
   }));
 }
 
@@ -320,6 +328,16 @@ ${CATEGORIES.map(c => {
   }));
 }
 
+function buildAboutPage() {
+  const relRoot = "../";
+  const main = fs.readFileSync(path.join(ROOT, "src", "about", "index.html"), "utf8");
+  write("about/index.html", page({
+    relRoot, title: "About — Dry Humps",
+    description: "Dry Humps is a home for anonymous first-person confessions.",
+    canonical: abs("about/"), main
+  }));
+}
+
 function buildSitemap() {
   const urls = [
     { loc: abs(""), pri: "1.0", freq: "daily" },
@@ -374,10 +392,12 @@ fs.mkdirSync(path.join(OUT, "assets"), { recursive: true });
 
 console.log("Copying stylesheet…");
 fs.copyFileSync(path.join(ROOT, "src", "style.css"), path.join(OUT, "assets", "style.css"));
+fs.copyFileSync(path.join(ROOT, "ads.txt"), path.join(OUT, "ads.txt"));
 
 console.log("Building pages…");
 buildHome();
 buildAllStoriesPage();
+buildAboutPage();
 STORIES.forEach(buildStoryPage);
 CATEGORIES.forEach(buildCategoryPage);
 buildSitemap();
