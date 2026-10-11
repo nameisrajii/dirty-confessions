@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — Dry Humps</title>
+<meta name="description" content="How Dry Humps handles your data, cookies and advertising.">
+<link rel="canonical" href="https://dryhumps.com/privacy/">
+<link rel="stylesheet" href="https://dryhumps.com/assets/style.css">
+</head>
+<body>
+<div class="dh-app">
+<main class="wrap" id="top">
+<article class="reader">
+<h1>Privacy Policy</h1>
+<p class="meta">Last updated: 11 October 2026</p>
+<div class="body">
+<p>Dry Humps ("we", "us") runs the website dryhumps.com. This page explains what data we collect and why.</p>
+<h2>What we collect</h2>
+<p>We use Google Analytics to understand how many people visit and which stories are read. This sets cookies and records anonymous data such as your approximate location, device and pages viewed.</p>
+<p>If you email us or submit a story, we store what you send us.</p>
+<h2>Cookies</h2>
+<p>Cookies are small files stored on your device. Analytics cookies help us improve the site. You can block cookies in your browser settings at any time.</p>
+<h2>Advertising</h2>
+<p>We may show ads from third-party ad networks. These networks may use cookies to show relevant ads. Their own privacy policies apply.</p>
+<h2>Affiliate links</h2>
+<p>Some links to products may be affiliate links. If you buy through them, we may earn a small commission at no extra cost to you.</p>
+<h2>Your rights</h2>
+<p>You can ask us what data we hold about you, and ask us to delete it, by emailing <strong>YOUR@EMAIL.com</strong>.</p>
+<h2>Contact</h2>
+<p>Questions? Email <strong>YOUR@EMAIL.com</strong>.</p>
+</div>
+<p><a class="back" href="https://dryhumps.com/">← Back home</a></p>
+</article>
+</main>
+</div>
+</body>
+</html>
