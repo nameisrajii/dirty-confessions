@@ -1,184 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Anonymous confessions, untold stories, hidden feelings and real-life experiences.">
-  <title>Dirty Confessions | Stories Without Names</title>
+<header>
+    <a class="site-name" href="#" aria-label="Dry Humps homepage">
+      DRY HUMPS
+    </a>
 
-  <style>
-    :root {
-      --bg: #100d13;
-      --card: #201823;
-      --pink: #d879a0;
-      --text: #fff4f8;
-      --muted: #c9b5c2;
-    }
-
-    * { box-sizing: border-box; }
-
-    html { scroll-behavior: smooth; }
-
-    body {
-      margin: 0;
-      background: var(--bg);
-      color: var(--text);
-      font-family: Arial, sans-serif;
-      line-height: 1.7;
-    }
-
-    header {
-      padding: 22px 7%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 16px;
-      border-bottom: 1px solid #392936;
-    }
-
-    .logo {
-      color: var(--pink);
-      font-size: 22px;
-      font-weight: bold;
-      letter-spacing: 2px;
-    }
-
-    nav a {
-      color: var(--text);
-      text-decoration: none;
-      margin-left: 18px;
-      font-size: 14px;
-    }
-
-    a:hover { color: var(--pink); }
-
-    .hero {
-      max-width: 850px;
-      margin: auto;
-      padding: 90px 22px 65px;
-      text-align: center;
-    }
-
-    .eyebrow {
-      color: var(--pink);
-      text-transform: uppercase;
-      letter-spacing: 3px;
-      font-size: 12px;
-    }
-
-    h1 {
-      font-size: clamp(36px, 7vw, 64px);
-      line-height: 1.12;
-      margin: 20px 0;
-    }
-
-    .intro {
-      color: var(--muted);
-      max-width: 590px;
-      margin: 0 auto 28px;
-    }
-
-    .btn {
-      display: inline-block;
-      background: #b64d78;
-      color: white;
-      text-decoration: none;
-      padding: 12px 21px;
-      border-radius: 7px;
-      margin: 5px;
-      border: 1px solid #b64d78;
-      cursor: pointer;
-      font-size: 15px;
-    }
-
-    .btn.secondary {
-      background: transparent;
-      border-color: var(--pink);
-    }
-
-    section {
-      max-width: 1000px;
-      margin: auto;
-      padding: 35px 22px;
-    }
-
-    h2 { font-size: 27px; }
-
-    .muted { color: var(--muted); }
-
-    .featured, .category, .story, form {
-      background: var(--card);
-      border: 1px solid #392936;
-      border-radius: 12px;
-      padding: 24px;
-    }
-
-    .featured { margin-top: 25px; }
-
-    .tag {
-      color: var(--pink);
-      font-size: 12px;
-      text-transform: uppercase;
-      letter-spacing: 2px;
-    }
-
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 16px;
-    }
-
-    .category h3 { margin-top: 0; }
-
-    .stories {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 16px;
-    }
-
-    .story h3 { margin-top: 8px; }
-
-    label {
-      display: block;
-      margin: 16px 0 6px;
-    }
-
-    input, select, textarea {
-      width: 100%;
-      padding: 12px;
-      border-radius: 6px;
-      border: 1px solid #584151;
-      background: #130f16;
-      color: white;
-      font: inherit;
-    }
-
-    textarea { min-height: 150px; resize: vertical; }
-
-    .notice { font-size: 13px; color: var(--muted); }
-
-    footer {
-      margin-top: 40px;
-      padding: 28px 20px;
-      text-align: center;
-      border-top: 1px solid #392936;
-      color: var(--muted);
-      font-size: 13px;
-    }
-
-    @media (max-width: 600px) {
-      header { flex-direction: column; }
-      nav a { margin: 0 7px; }
-      .grid, .stories { grid-template-columns: 1fr; }
-      .hero { padding-top: 60px; }
-    }
-  </style>
-</head>
-
-<body>
-  <header>
-    <div class="logo">DIRTY CONFESSIONS</div>
-    <nav>
+    <nav aria-label="Main navigation">
       <a href="#stories">Stories</a>
       <a href="#categories">Categories</a>
       <a href="#submit">Confess</a>
@@ -188,21 +13,27 @@
   <main>
     <div class="hero">
       <div class="eyebrow">Your secret. Your story.</div>
+
       <h1>Some things are easier to confess in the dark.</h1>
+
       <p class="intro">
         Hidden feelings. Complicated love. Unexpected mistakes.
         Real stories and honest confessions, shared without judgment.
       </p>
+
       <a class="btn" href="#stories">Explore Stories ↓</a>
       <a class="btn secondary" href="#submit">Share Your Secret</a>
 
       <div class="featured">
-        <div class="tag">Featured story · Sample</div>
-        <h2>There is a version of me nobody knows.</h2>
+        <div class="tag">Editor's pick · Part 1 &amp; 2</div>
+        <h2>The Salon Accident That Left Me Completely Exposed</h2>
         <p class="muted">
-          Sometimes the hardest truths are the ones we keep from the world.
-          What would you say if nobody knew your name?
+          One late evening, an ordinary salon appointment turned into
+          an embarrassing chain of accidents I could never have predicted.
         </p>
+        <a class="read-link" href="#first-confession">
+          Read the confession →
+        </a>
       </div>
     </div>
 
@@ -212,20 +43,31 @@
 
       <div class="grid">
         <div class="category">
-          <h3>❤️ Love & Regret</h3>
-          <p class="muted">First loves, lost chances and words left unsaid.</p>
+          <h3>❤️ Love &amp; Regret</h3>
+          <p class="muted">
+            First loves, lost chances and words left unsaid.
+          </p>
         </div>
+
         <div class="category">
           <h3>🌒 Dark Secrets</h3>
-          <p class="muted">Private thoughts and difficult truths.</p>
+          <p class="muted">
+            Private thoughts and difficult truths.
+          </p>
         </div>
+
         <div class="category">
           <h3>📖 Real Stories</h3>
-          <p class="muted">Life experiences, mistakes and lessons learned.</p>
+          <p class="muted">
+            Life experiences, mistakes and lessons learned.
+          </p>
         </div>
+
         <div class="category">
           <h3>✉️ Unsent Words</h3>
-          <p class="muted">Letters and confessions never shared aloud.</p>
+          <p class="muted">
+            Letters and confessions never shared aloud.
+          </p>
         </div>
       </div>
     </section>
@@ -233,31 +75,771 @@
     <section id="stories">
       <h2>Latest confessions</h2>
       <p class="muted">
-        Sample stories for your first design. Replace these with approved submissions.
+        Personal stories shared in the first person.
       </p>
 
       <div class="stories">
         <article class="story">
-          <div class="tag">Love & Regret</div>
+          <div class="tag">Love &amp; Regret</div>
           <h3>The message I never sent</h3>
           <p class="muted">
-            I wrote it a hundred times, but I never found the courage to send it.
+            I wrote it a hundred times, but I never found the courage
+            to send it.
           </p>
-          <small class="muted">Anonymous · Sample story</small>
+          <div class="story-meta">Anonymous · Sample story</div>
         </article>
 
         <article class="story">
-          <div class="tag">Life & Truth</div>
-          <h3>Behind my perfect smile</h3>
+          <div class="tag">Real Stories · Part 1 &amp; 2</div>
+          <h3>The Salon Accident That Left Me Completely Exposed</h3>
           <p class="muted">
-            Everyone thought I had everything figured out. Nobody asked how I felt.
+            I walked in for a routine appointment. By closing time,
+            I found myself caught in an increasingly awkward situation.
           </p>
-          <small class="muted">Anonymous · Sample story</small>
+          <div class="story-meta">Anonymous · First-person confession</div>
+          <a class="read-link" href="#first-confession">
+            Read both parts →
+          </a>
         </article>
       </div>
     </section>
 
-    <section id="submit">
+    <section id="first-confession" class="story-page">
+      <article>
+        <div class="story-header">
+          <div class="tag">Anonymous Confession · Part 1</div>
+
+          <h1>The Salon Accident That Left Me Completely Exposed</h1>
+
+          <p class="story-subtitle">
+            No panties, one too-small shirt, and two male stylists
+            who saw everything.
+          </p>
+
+          <p class="story-meta">
+            Anonymous · Personal experience · Part 1 of 2
+          </p>
+        </div>
+
+        <div class="story-content">
+          <p>
+            The salon was quiet and nearly empty since it was closing
+            time. The receptionist had already left early, and only the
+            two male hairstylists remained. I walked in wearing my usual
+            casual outfit: a T-shirt and pyjama pants. Because I am a
+            regular customer, the staff recognized me immediately and
+            welcomed me inside.
+          </p>
+
+          <p>
+            I told them I wanted to get a haircut, a hair wash, and a
+            leg waxing session. Since I needed multiple treatments, they
+            suggested I change into one of the salon's standard oversized
+            T-shirt tops.
+          </p>
+
+          <p>
+            I went into the private changing room to switch clothes and
+            used the restroom first. While doing so, an accident
+            happened—my underwear fell into the water by mistake. I was
+            stuck. I put my bra back on, but I had to go without any
+            panties underneath. To make matters worse, all the tops in
+            my correct size were already put away for washing. The only
+            one left was a smaller size.
+          </p>
+
+          <p>
+            When I put the top on, I realized it only covered down to my
+            thighs. Because it was a loose fit, the front gaped open wide
+            enough that my cleavage would easily show if I bent down even
+            a little bit.
+          </p>
+
+          <p>
+            Standing there in the room, realizing I had no underwear on
+            underneath this short, loose top, with only those two men
+            outside in the closing salon, my nerves completely took over.
+            I felt incredibly anxious, exposed, and overwhelmed by the
+            entire situation.
+          </p>
+
+          <p>
+            I stepped out of the changing room, keeping my movements as
+            small and careful as possible. I walked over to the salon
+            chair and sat down, immediately pressing my legs tightly
+            together to keep the short top in place. It barely reached
+            just above my knees.
+          </p>
+
+          <p>
+            The two male stylists approached me to begin the treatments.
+            One stood behind my chair to start working on my face and
+            head, while the other sat down on a low stool right by my
+            feet. To make it easier for them to work, I had to lean back
+            into a slanting, reclined position. Soon after, the first
+            stylist placed cucumber slices over my eyes, completely
+            blocking my vision.
+          </p>
+
+          <p>
+            The physical treatments began simultaneously. The stylist at
+            my head started a relaxing scalp massage, while the stylist
+            at my feet began cleaning my legs with warm water to prepare
+            for the waxing.
+          </p>
+
+          <p>
+            Even though the treatments were meant to be relaxing, the
+            tension inside the room grew more palpable. Being blindfolded
+            by the cucumbers heightened every other sense, making every
+            sound and touch feel magnified. The mind raced with the
+            standard anxiety of the impending waxing process, acutely
+            aware of the awkwardness of the reclined position and the
+            vulnerability of waiting for a painful treatment. Every
+            splash of the warm water and the firm pressure on the scalp
+            added to the suspense, creating an intense anticipation that
+            had to be endured in complete silence.
+          </p>
+
+          <p>
+            While the stylist at my head continued the scalp massage, the
+            stylist at my feet lifted a bowl of hot water to start rinsing
+            my legs.
+          </p>
+
+          <p>
+            I didn't realize how close he was. As I shifted my weight
+            slightly in the reclined chair to get comfortable, my elbow
+            swung outward and hit his arm directly.
+          </p>
+
+          <p>
+            The stylist lost his grip, and the bowl tipped over, pouring
+            the hot water straight down the front of my short top.
+          </p>
+
+          <p>
+            The shock of the heat made me gasp, and the cool cucumber
+            slices instantly flew off my eyes. I looked down in absolute
+            panic. The thin fabric of the smaller T-shirt top was
+            completely soaked and plastered tightly against my skin.
+          </p>
+
+          <p>
+            I stood up from the wet chair as quickly as I could. The
+            soaked, thin fabric of the top felt completely plastered to
+            my body. As I moved, I felt the wet fabric get pulled and
+            stuck tightly between my butt cheeks, making me feel even
+            more exposed. Whereas in my front, my waist and shape of my
+            front bottom was completely sticking with my skin and
+            exposing it. Luckily, my bra saved my boobs from exposing.
+          </p>
+
+          <p>
+            The head stylist quickly checked the cabinets and sighed.
+            "We don't have any other salon dresses left in the back, they
+            are all put away for laundry. But we have a heavy-duty
+            professional blow dryer right here. If you are okay with it,
+            we can use the high heat to air-dry the top right on you. It
+            will only take a couple of minutes to get it completely dry
+            and warm again."
+          </p>
+
+          <p>
+            I was too shocked and embarrassed to walk all the way back to
+            the changing room looking like this, so I just nodded. "Okay,
+            let's just do that," I said, my voice shaking.
+          </p>
+
+          <p>
+            I walked over and stood right in front of the large salon
+            mirror. Seeing my reflection made my heart race even faster.
+            The wet fabric was totally see-through, clinging to my waist
+            and revealing the exact shape of my bare front bottom, while
+            the back was still completely wedged between my butt cheeks.
+            I felt so intensely exposed.
+          </p>
+
+          <p>
+            The stylist standing behind me noticed how tightly the wet
+            fabric was wedged between my butt cheeks. To help it dry
+            faster, he carefully reached out with his hand to pull the
+            fabric out of my cheeks. out of pure panic to just get it
+            over with, I instinctively reached back with my own hands to
+            split my cheeks open right before him to pull the wet fabric
+            out myself. The second I did it, I felt a wave of intense
+            regret and shame. The stylist froze behind me, his face
+            turning completely dark red in the mirror as he looked away,
+            both of us trapped in a horribly uncomfortable silence.
+          </p>
+
+          <p>
+            The other stylist adjusted his position and aimed the
+            powerful blow dryer directly at the front of the short shirt.
+            As the strong, steady blast of focused hot air blew straight
+            up the front of the loose top, the intense, enveloping warmth
+            completely pushed through the damp, cold fabric against my
+            skin. The sudden contrast of the intense heat against my
+            shivering body felt incredibly soothing. Overwhelmed by the
+            warmth and the sheer intensity of everything happening at
+            once, I completely gave in to the sensation. I closed my eyes
+            tightly, let out a soft breath, and just stood there enjoying
+            the warm, powerful rush of air.
+          </p>
+
+          <p>
+            The stylist in front of me needed to dry the sides and the
+            underarms of the short, tight top. He politely asked me to
+            raise my arms so the hot air could reach those spots.
+          </p>
+
+          <p>
+            I knew exactly what would happen if I did. Because the top
+            was a smaller, loose-fitting size and barely covered my
+            thighs, lifting my arms meant the entire hemline would ride
+            up significantly. I knew I was pushing myself into a
+            completely exposed situation, but the overwhelming anxiety
+            and the desire to just get this over with took over.
+          </p>
+
+          <p>
+            I slowly lifted both hands above my head.
+          </p>
+
+          <p>
+            As I did, the short top pulled upward instantly. The fabric
+            completely rode up past my hips, exposing my waist and my
+            bare lower body right in front of the massive mirror.
+          </p>
+
+          <p>
+            I closed my eyes tightly, let out a soft breath, and just
+            stood there with my arms raised, enjoying the warm, powerful
+            rush of air while completely exposed in the mirror.
+          </p>
+
+          <p>
+            Outside of my closed eyes, the two stylists were completely
+            stunned. They had never expected me to actually raise my arms
+            and fully expose myself like that, let alone stand there so
+            calmly with my eyes shut.
+          </p>
+
+          <p>
+            He directed the powerful, concentrated blast of hot air
+            directly at my bare lower body, flooding me with an
+            overwhelming rush of heat. The sudden, intense warmth hitting
+            me while I was completely exposed to them sent a massive wave
+            of relief through my shivering frame. Before I could catch
+            myself, a tiny, slightly happy sound escaped my throat—a
+            soft, involuntary sigh of pure comfort.
+          </p>
+
+          <p>
+            With my arms still held high above my head and my eyes
+            tightly shut, I could feel the sudden drop in temperature
+            against my exposed skin.
+          </p>
+
+          <p>
+            Because the machine had cut off before the very last damp
+            spots along my waistline could dry, the stylists were left
+            completely stuck.
+          </p>
+
+          <p>
+            I knew exactly what he was about to do, and I knew how
+            incredibly messy the situation had become. But instead of
+            opening my eyes or pulling away,  I gave him a subtle, silent
+            nod a clear go-ahead to proceed.
+          </p>
+
+          <p>
+            Under the intense rush of the sensation, I completely lost
+            control of my movements. I tilted my body senselessly,
+            shifting my weight completely off-balance in a daze.
+          </p>
+
+          <p>
+            That sudden, reckless movement led straight to a damn intense
+            moment.
+          </p>
+
+          <p>
+            Because I tilted without looking, my bare lower body shifted
+            directly into the stylist's face as he was leaning in to blow
+            air. The physical contact was immediate, heavy, and
+            completely shocking. The stylist let out a sharp, muffled
+            gasp against my skin, but instead of pulling away instantly
+            in horror, the sheer shock and the overwhelming trap of the
+            situation locked everyone in place.
+          </p>
+
+          <p>
+            his warm breaths turning rapid and shallow against my bare
+            skin as he continued to exhale, the intense heat of his face
+            pressed fully against my lower body. Behind me, the other
+            stylist didn't move to stop it; the quiet room was filled
+            only with the sound of our heavy, erratic breathing. I kept
+            my arms raised high, my hands trembling in the air, and my
+            eyes squeezed shut so tightly that patterns flashed behind my
+            eyelids. I was silently tripping over the absolute, unhinged
+            madness of the moment, completely paralyzed by the scandalous
+            sensation as the intense physical closeness continued.
+          </p>
+
+          <p>
+            I bent my hips a little while my arms were still up,
+            intentionally shifting my posture in front of the mirror. In
+            that exact moment, the chaotic situation finally aligned with
+            what I had secretly been hoping for through all the tension
+          </p>
+
+          <p>
+            The stylist's face was still pressed flush against my bare
+            skin, and when I tilted forward, my lower body rolled gently
+            up and over his mouth. Not a graze this time. A slow,
+            deliberate drag, the kind that lets him know I felt him
+            there.
+          </p>
+
+          <p>
+            He went completely still behind the warmth of his own breath.
+            I could feel it breaking against me in short, wet bursts,
+            each one a little shakier than the last. Then—slowly, so
+            slowly it felt like a question—he turned his head a fraction
+            and let his lips brush the softest part of me. Not a kiss. A
+            test. A man checking whether he was allowed to want this.
+          </p>
+
+          <p>
+            My arms were still up in the air. My eyes were still shut.
+            The mirror was still watching. And every single one of those
+            facts made it worse and better at the same time.
+          </p>
+
+          <p>
+            The salon was quiet and nearly empty since it was closing
+            time. The receptionist had already left early, and only the
+            two male hairstylists remained. I walked in wearing my usual
+            casual outfit: a T-shirt and pyjama pants. Because I am a
+            regular customer, the staff recognized me immediately and
+            welcomed me inside.
+          </p>
+
+          <p>
+            I told them I wanted to get a haircut, a hair wash, and a
+            leg waxing session. Since I needed multiple treatments, they
+            suggested I change into one of the salon's standard oversized
+            T-shirt tops.
+          </p>
+
+          <p>
+            I went into the private changing room to switch clothes and
+            used the restroom first. While doing so, an accident
+            happened—my underwear fell into the water by mistake. I was
+            stuck. I put my bra back on, but I had to go without any
+            panties underneath. To make matters worse, all the tops in
+            my correct size were already put away for washing. The only
+            one left was a smaller size.
+          </p>
+
+          <p>
+            When I put the top on, I realized it only covered down to my
+            thighs. Because it was a loose fit, the front gaped open wide
+            enough that my cleavage would easily show if I bent down even
+            a little bit.
+          </p>
+
+          <p>
+            Standing there in the room, realizing I had no underwear on
+            underneath this short, loose top, with only those two men
+            outside in the closing salon, my nerves completely took over.
+            I felt incredibly anxious, exposed, and overwhelmed by the
+            entire situation.
+          </p>
+
+          <p>
+            I stepped out of the changing room, keeping my movements as
+            small and careful as possible. I walked over to the salon
+            chair and sat down, immediately pressing my legs tightly
+            together to keep the short top in place. It barely reached
+            just above my knees.
+          </p>
+
+          <p>
+            The two male stylists approached me to begin the treatments.
+            One stood behind my chair to start working on my face and
+            head, while the other sat down on a low stool right by my
+            feet. To make it easier for them to work, I had to lean back
+            into a slanting, reclined position. Soon after, the first
+            stylist placed cucumber slices over my eyes, completely
+            blocking my vision.
+          </p>
+
+          <p>
+            The physical treatments began simultaneously.
+          </p>
+
+          <hr class="part-divider">
+
+          <div class="tag">Anonymous Confession · Part 2</div>
+
+          <h2 class="part-heading">
+            The Salon Accident That Left Me Completely Exposed — Part 2
+          </h2>
+
+          <p class="story-subtitle">
+            They took turns, so I bent my hips to...
+          </p>
+
+          <p>
+            The stylist behind me exhaled a soft laugh against my ear,
+            and that laugh did something. It told me they were both
+            exactly where they wanted to be.
+          </p>
+
+          <p>
+            And then it got honest.
+          </p>
+
+          <p>
+            He stopped being gentle. His tongue found its rhythm and his
+            rhythm found me, and my hand flew to the back of his head
+            without asking permission, fingers curling into his hair,
+            holding him exactly where he was. The angle tipped my hips
+            forward, and he groaned against me like I'd just given him
+            something precious. The vibration traveled up through my
+            whole body and settled somewhere behind my ribs.
+          </p>
+
+          <p>
+            My reflection in the mirror was a stranger. Flushed. Mouth
+            open. Hair wrecked from the scalp massage. One strap of the
+            top slipping off my shoulder, the fabric hanging off me like
+            an afterthought. And between my own thighs, the top of a
+            man's head, moving.
+          </p>
+
+          <p>
+            Somewhere in the middle of it the second stylist's hands
+            drifted lower—palms flat on my hips, thumbs tracing slow
+            circles into the bones there, drawing me back against him
+            just enough that I felt him, too, the whole length of his
+            chest pressed to my spine, hard and steady and warm. So I was
+            caught between the two of them now, one mouth in front, one
+            body behind, and my own two hands braced on the first man's
+            shoulders while the second man's chin rested in the crook of
+            my neck.
+          </p>
+
+          <p>
+            And it was. He ate me like fruit—messy, greedy, chin shiny,
+            the soft wet sounds filling the whole empty salon so loud it
+            was almost embarrassing and somehow that made it worse. His
+            nose pressed into me, his mouth worked slow then fast then
+            slow again with no pattern I could track, and every time my
+            thighs tried to close around his ears he just shoved them
+            back open with his shoulders and kept going. My hand was back
+            in his hair, knuckles white. The top had slid completely off
+            one shoulder now, hanging off me in a sad little twist of
+            fabric that covered basically nothing.
+          </p>
+
+          <p>
+            Behind me, the second man had stopped being patient too.
+          </p>
+
+          <p>
+            His hands slid from my hips up under the bunched hem of the
+            top, flat palms dragging over my stomach, my ribs, up until
+            his thumbs caught the edge of my bra. He didn't undo it. He
+            just pushed the cups up and out of the way and cupped both my
+            breasts in his hands, and I felt the first cool brush of air
+            on skin that had been covered for hours, and then his palms
+            closed over them, warm and heavy, thumbs rolling slow over
+            the peaks.
+          </p>
+
+          <p>
+            His teeth grazed my earlobe. "Every time he pulled the fabric
+            out of your cheeks you flinched like you'd been caught. Every
+            time you bent your hips you looked at him in the mirror
+            first. You wanted to be seen." His thumb rolled again,
+            harder, and my whole spine arched. "So now you're seen."
+          </p>
+
+          <p>
+            The man between my legs chose that exact moment to push two
+            fingers into me, slow and deep, curling up on the way in, and
+            I made a sound I hadn't known I could make—somewhere between
+            a gasp and a whine. He kept his mouth on my clit the whole
+            time, didn't let up for one second, and the combination of
+            the stretch and the wet and the relentless flick of his
+            tongue turned my legs to water. The man behind held me up. He
+            had to. My feet weren't doing anything.
+          </p>
+
+          <p>
+            I was completely hanging between the two of them now—one
+            holding me by the tits and the ribs, one holding me open by
+            the thighs—and the mirror was still right there, and I could
+            see everything. My own face, wrecked. My reflection's mouth
+            open. Both their heads buried in different parts of me. The
+            wet top twisted around my waist like a rope. And a thin,
+            shiny mess of slick running down the inside of my thigh that
+            had absolutely not been there when I walked in.
+          </p>
+
+          <p>
+            Then he found the spot. The one that makes your toes curl and
+            your brain go white. His fingers crooked exactly there and
+            stayed there, tapping, while his tongue went fast and flat
+            and merciless, and I felt the second orgasm arrive way too
+            soon, riding in on top of the first like it hadn't even
+            finished leaving.
+          </p>
+
+          <p>
+            "Wait—wait, I'm gonna—"
+          </p>
+
+          <p>
+            "Again?" The man behind me sounded delighted. "Already?"
+          </p>
+
+          <p>
+            "Shut up—"
+          </p>
+
+          <p>
+            "Don't," he said, and kissed my throat. "Give it to him."
+          </p>
+
+          <p>
+            I did. It hit harder than the first—a deep, rolling,
+            full-body clench that made me fold forward over the stylist's
+            head, both hands gripping his hair, my thighs clamping
+            finally around his ears and holding him there while I shook
+            and shook and made a long broken noise into the quiet room.
+            He didn't stop. He worked me through every last wave, then
+            eased off so slow it was almost cruel, then pulled his
+            fingers out and looked up at me.
+          </p>
+
+          <p>
+            Behind me the other man had already let go of my tits and
+            started unbuttoning his own shirt one-handed like a man who'd
+            been waiting all evening and was done pretending otherwise.
+            When he pulled it off I felt his bare chest against my
+            back—warm and solid—and the skin-to-skin of it pulled a whole
+            new shiver down my spine.
+          </p>
+
+          <p>
+            I chose the chair. Of course I chose the chair—the same
+            chair, the same reclined, slanted angle they'd sat me in to
+            "relax," and now the man climbed up and straddled it and I
+            slid down onto my knees between the footrest and his hips,
+            and when he pulled himself free of his trousers my mouth
+            genuinely watered.
+          </p>
+
+          <p>
+            I took him slow at first—just the head, just to taste the
+            salt off him—and he made a strangled sound above me and
+            dropped one hand into my hair, not pushing, just holding,
+            like he needed something to grip. The man behind me had
+            crouched down by my side and was watching, openly watching,
+            one hand slowly working himself through his own trousers, and
+            the fact that he was getting off on the view of me doing this
+            pushed me into doing it dirtier than I meant to.
+          </p>
+
+          <p>
+            So I went deeper. Took him all the way until my nose pressed
+            into the soft skin at his base, held it, swallowed around him
+            just to feel him twitch, and pulled back slow with a wet drag
+            and a string of slick still connecting us. Above me he swore
+            under his breath. The hand in my hair tightened.
+          </p>
+
+          <p>
+            "Fuck," he whispered. "Fuck, you're good at—"
+          </p>
+
+          <p>
+            I didn't let him finish. I went back down and set a rhythm,
+            one hand wrapped around what my mouth couldn't reach, the
+            other braced on his thigh, and I let it get messy—loud and
+            wet and sloppy on purpose, saliva running down the side of
+            him, the sounds echoing off the tiles and the mirror so he
+            could hear exactly how much I was enjoying it. Behind me, the
+            watching man had given up pretending and pulled himself out
+            fully into his hand, stroking slow, eyes locked on the two of
+            us.
+          </p>
+
+          <p>
+            The one in the chair was already close—I could feel it, the
+            way his whole body had gone rigid, the way his thighs tensed
+            under my palm. He tugged my hair gently. "I'm gonna—if you
+            don't stop—"
+          </p>
+
+          <p>
+            I pulled off just long enough to say it. "Don't stop."
+          </p>
+
+          <p>
+            That was all he needed. He came with a low, guttural groan,
+            one long pulse after another, and I stayed right there with
+            my mouth open and let him—let it land on my tongue and my
+            lips and a little of it stripe my cheek because I was too far
+            gone to be tidy about it. When he finally sagged back against
+            the chair, chest heaving, I sat back on my heels and wiped my
+            face with the back of my wrist and looked up at him and
+            smiled.
+          </p>
+
+          <p>
+            Behind me, the second man had stopped stroking. He was
+            staring at the mess on my face like it was the best thing
+            he'd ever seen.
+          </p>
+
+          <p>
+            "My turn," he said.
+          </p>
+
+          <p>
+            I turned on my knees and he stepped around the chair, and he
+            didn't even let me get my breath back—just pushed me gently
+            backward until my shoulders hit the chair's footrest and
+            lifted my hips off the floor and lined himself up and looked
+            down at me with one eyebrow raised, asking.
+          </p>
+
+          <p>
+            I nodded. He pushed in.
+          </p>
+
+          <p>
+            And that—that was different. Slow, thick, filling me in a way
+            the fingers hadn't, and he had to pause halfway just to
+            breathe and reset, forehead dropping to mine, both of us
+            shaking a little. The first man had recovered enough to sit
+            up and watch, one hand already lazily back on himself, and
+            somehow the two of them sharing the moment made it filthier
+            than either of them alone.
+          </p>
+
+          <p>
+            "Move," I whispered. "Please move."
+          </p>
+
+          <p>
+            He moved.
+          </p>
+
+          <p>
+            Slow at first, deep and deliberate, the kind of pace that
+            makes you feel every single inch going in and out, and then
+            faster when he found the angle, my hips tilting up to meet
+            him, the footrest creaking, my heels sliding useless on the
+            wet tile. His mouth was everywhere—my neck, my collarbone,
+            the tops of my breasts still spilling out of the pushed-up
+            bra—and my hands clawed at his back, and the mirror showed
+            the two of us tangled and sweat-slick and completely,
+            shamelessly gone.
+          </p>
+
+          <p>
+            The man in the chair watched us with his lip caught between
+            his teeth. And when he couldn't stand it anymore he leaned
+            forward and slid a hand down between us and found my clit
+            with two wet fingers and started rubbing slow circles in time
+            with the other man's thrusts.
+          </p>
+
+          <p>
+            Three hands, one rhythm. I don't know who set the pace
+            anymore. It didn't matter. Everything in me was climbing
+            again, third time, and this one felt huge—the kind that
+            builds from somewhere behind your ribs and pulls everything
+            with it—and I grabbed the back of his neck and pulled his
+            mouth to mine and kissed him messy while he fucked into me,
+            both of us panting into each other's mouths, and the fingers
+            on my clit sped up, and—
+          </p>
+
+          <p>
+            "Don't stop," I gasped against his lips. "Don't you dare
+            stop—"
+          </p>
+
+          <p>
+            "I won't," he breathed. "Come on me. Come on me."
+          </p>
+
+          <p>
+            And I did.
+          </p>
+
+          <p>
+            It tore through me so hard my back arched off the chair and
+            my heels locked and a sound came out of me that was barely
+            human—long and broken and completely beyond caring who heard
+            it. He felt me clench around him and lost it almost
+            immediately after, driving in deep and holding there,
+            spilling into me with a shudder and a groan pressed into my
+            throat. The fingers between us kept rubbing me through every
+            aftershock until I had to weakly slap them away.
+          </p>
+
+          <p>
+            For a long moment nobody moved. Nobody breathed right. The
+            three of us just stayed there, tangled, wet, wrecked, in the
+            middle of a closed salon that was definitely, definitely late
+            now.
+          </p>
+
+          <p>
+            Then the man above me pulled out slow, and I felt it all—the
+            mess, the slick, the heat of everything—start to run out of
+            me onto the tile, and I didn't even care.
+          </p>
+
+          <p>
+            He looked down at me, breathless, hair ruined, and started
+            laughing.
+          </p>
+
+          <p>
+            "So," he said. "You wanted a wash, a cut, and a wax."
+          </p>
+
+          <p>
+            I lay there on the salon floor, top twisted to my ribs, bra
+            somewhere around my collarbones, thighs glazed, mirror still
+            watching the whole crime scene, and laughed back like a
+            satisfied hungry bitch.
+          </p>
+
+          <p class="story-meta">
+            End of Part 2 · Anonymous first-person story
+          </p>
+        </div>
+
+        <p class="notice">
+          This is an editorially adapted version of a submitted-style
+          story. Stories on this page are not automatically verified
+          as real-life experiences.
+        </p>
+      </article>
+    </section>
+
+    <section>
       <h2>Share your confession</h2>
       <p class="muted">
         Have something you have never said out loud? Start writing here.
@@ -265,9 +847,9 @@
 
       <form id="confessionForm">
         <label for="category">Story category</label>
-        <select id="category" required>
+        <select id="category" required="">
           <option value="">Choose a category</option>
-          <option>Love & Regret</option>
+          <option>Love &amp; Regret</option>
           <option>Dark Secrets</option>
           <option>Real Stories</option>
           <option>Unsent Words</option>
@@ -275,50 +857,26 @@
         </select>
 
         <label for="title">Story title</label>
-        <input id="title" maxlength="100" required
-          placeholder="Give your story a title">
+        <input maxlength="100" required="" placeholder="Give your story a title">
 
         <label for="story">Your confession</label>
-        <textarea id="story" maxlength="5000" required
-          placeholder="Write your story here..."></textarea>
+        <textarea id="story" maxlength="5000" required="" placeholder="Write your story here..."></textarea>
 
         <p class="notice">
-          Please don't include passwords, addresses, phone numbers or
-          other identifying information. Never submit someone else's
-          private information without permission.
+          Please don't include passwords, addresses, phone numbers
+          or other identifying information. Never submit another
+          person's private information without permission.
         </p>
 
         <button class="btn" type="submit">Preview my confession</button>
+
         <p id="formMessage" class="muted" aria-live="polite"></p>
       </form>
     </section>
   </main>
 
   <footer>
-    <p>DIRTY CONFESSIONS · Stories without names.</p>
+    <p>DRY HUMPS · Stories without names.</p>
     <p>Respect privacy. No harassment. Share responsibly.</p>
-    <p>© <span id="year"></span> Dirty Confessions</p>
+    <p>© <span id="year"></span> Dry Humps</p>
   </footer>
-
-  <script>
-    document.getElementById("year").textContent =
-      new Date().getFullYear();
-
-    document.getElementById("confessionForm").addEventListener(
-      "submit", function (event) {
-        event.preventDefault();
-
-        const title = document.getElementById("title").value.trim();
-        const story = document.getElementById("story").value.trim();
-
-        if (!title || !story) return;
-
-        document.getElementById("formMessage").textContent =
-          "Your preview is ready, but this demo does not send or save " +
-          "your confession. A secure submission service must be connected " +
-          "before visitors can submit stories.";
-      }
-    );
-  </script>
-</body>
-</html>
