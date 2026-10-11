@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Anonymous confessions, untold stories, hidden feelings and real-life experiences.">
+  <title>Dirty Confessions | Stories Without Names</title>
+
+  <style>
+    :root {
+      --bg: #100d13;
+      --card: #201823;
+      --pink: #d879a0;
+      --text: #fff4f8;
+      --muted: #c9b5c2;
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: Arial, sans-serif;
+      line-height: 1.7;
+    }
+
+    header {
+      padding: 22px 7%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      border-bottom: 1px solid #392936;
+    }
+
+    .logo {
+      color: var(--pink);
+      font-size: 22px;
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+
+    nav a {
+      color: var(--text);
+      text-decoration: none;
+      margin-left: 18px;
+      font-size: 14px;
+    }
+
+    a:hover { color: var(--pink); }
+
+    .hero {
+      max-width: 850px;
+      margin: auto;
+      padding: 90px 22px 65px;
+      text-align: center;
+    }
+
+    .eyebrow {
+      color: var(--pink);
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      font-size: 12px;
+    }
+
+    h1 {
+      font-size: clamp(36px, 7vw, 64px);
+      line-height: 1.12;
+      margin: 20px 0;
+    }
+
+    .intro {
+      color: var(--muted);
+      max-width: 590px;
+      margin: 0 auto 28px;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #b64d78;
+      color: white;
+      text-decoration: none;
+      padding: 12px 21px;
+      border-radius: 7px;
+      margin: 5px;
+      border: 1px solid #b64d78;
+      cursor: pointer;
+      font-size: 15px;
+    }
+
+    .btn.secondary {
+      background: transparent;
+      border-color: var(--pink);
+    }
+
+    section {
+      max-width: 1000px;
+      margin: auto;
+      padding: 35px 22px;
+    }
+
+    h2 { font-size: 27px; }
+
+    .muted { color: var(--muted); }
+
+    .featured, .category, .story, form {
+      background: var(--card);
+      border: 1px solid #392936;
+      border-radius: 12px;
+      padding: 24px;
+    }
+
+    .featured { margin-top: 25px; }
+
+    .tag {
+      color: var(--pink);
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px;
+    }
+
+    .category h3 { margin-top: 0; }
+
+    .stories {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px;
+    }
+
+    .story h3 { margin-top: 8px; }
+
+    label {
+      display: block;
+      margin: 16px 0 6px;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 12px;
+      border-radius: 6px;
+      border: 1px solid #584151;
+      background: #130f16;
+      color: white;
+      font: inherit;
+    }
+
+    textarea { min-height: 150px; resize: vertical; }
+
+    .notice { font-size: 13px; color: var(--muted); }
+
+    footer {
+      margin-top: 40px;
+      padding: 28px 20px;
+      text-align: center;
+      border-top: 1px solid #392936;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    @media (max-width: 600px) {
+      header { flex-direction: column; }
+      nav a { margin: 0 7px; }
+      .grid, .stories { grid-template-columns: 1fr; }
+      .hero { padding-top: 60px; }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="logo">DIRTY CONFESSIONS</div>
+    <nav>
+      <a href="#stories">Stories</a>
+      <a href="#categories">Categories</a>
+      <a href="#submit">Confess</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="hero">
+      <div class="eyebrow">Your secret. Your story.</div>
+      <h1>Some things are easier to confess in the dark.</h1>
+      <p class="intro">
+        Hidden feelings. Complicated love. Unexpected mistakes.
+        Real stories and honest confessions, shared without judgment.
+      </p>
+      <a class="btn" href="#stories">Explore Stories ↓</a>
+      <a class="btn secondary" href="#submit">Share Your Secret</a>
+
+      <div class="featured">
+        <div class="tag">Featured story · Sample</div>
+        <h2>There is a version of me nobody knows.</h2>
+        <p class="muted">
+          Sometimes the hardest truths are the ones we keep from the world.
+          What would you say if nobody knew your name?
+        </p>
+      </div>
+    </div>
+
+    <section id="categories">
+      <h2>Explore your feelings</h2>
+      <p class="muted">Find a story that speaks to you.</p>
+
+      <div class="grid">
+        <div class="category">
+          <h3>❤️ Love & Regret</h3>
+          <p class="muted">First loves, lost chances and words left unsaid.</p>
+        </div>
+        <div class="category">
+          <h3>🌒 Dark Secrets</h3>
+          <p class="muted">Private thoughts and difficult truths.</p>
+        </div>
+        <div class="category">
+          <h3>📖 Real Stories</h3>
+          <p class="muted">Life experiences, mistakes and lessons learned.</p>
+        </div>
+        <div class="category">
+          <h3>✉️ Unsent Words</h3>
+          <p class="muted">Letters and confessions never shared aloud.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="stories">
+      <h2>Latest confessions</h2>
+      <p class="muted">
+        Sample stories for your first design. Replace these with approved submissions.
+      </p>
+
+      <div class="stories">
+        <article class="story">
+          <div class="tag">Love & Regret</div>
+          <h3>The message I never sent</h3>
+          <p class="muted">
+            I wrote it a hundred times, but I never found the courage to send it.
+          </p>
+          <small class="muted">Anonymous · Sample story</small>
+        </article>
+
+        <article class="story">
+          <div class="tag">Life & Truth</div>
+          <h3>Behind my perfect smile</h3>
+          <p class="muted">
+            Everyone thought I had everything figured out. Nobody asked how I felt.
+          </p>
+          <small class="muted">Anonymous · Sample story</small>
+        </article>
+      </div>
+    </section>
+
+    <section id="submit">
+      <h2>Share your confession</h2>
+      <p class="muted">
+        Have something you have never said out loud? Start writing here.
+      </p>
+
+      <form id="confessionForm">
+        <label for="category">Story category</label>
+        <select id="category" required>
+          <option value="">Choose a category</option>
+          <option>Love & Regret</option>
+          <option>Dark Secrets</option>
+          <option>Real Stories</option>
+          <option>Unsent Words</option>
+          <option>Other</option>
+        </select>
+
+        <label for="title">Story title</label>
+        <input id="title" maxlength="100" required
+          placeholder="Give your story a title">
+
+        <label for="story">Your confession</label>
+        <textarea id="story" maxlength="5000" required
+          placeholder="Write your story here..."></textarea>
+
+        <p class="notice">
+          Please don't include passwords, addresses, phone numbers or
+          other identifying information. Never submit someone else's
+          private information without permission.
+        </p>
+
+        <button class="btn" type="submit">Preview my confession</button>
+        <p id="formMessage" class="muted" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>DIRTY CONFESSIONS · Stories without names.</p>
+    <p>Respect privacy. No harassment. Share responsibly.</p>
+    <p>© <span id="year"></span> Dirty Confessions</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent =
+      new Date().getFullYear();
+
+    document.getElementById("confessionForm").addEventListener(
+      "submit", function (event) {
+        event.preventDefault();
+
+        const title = document.getElementById("title").value.trim();
+        const story = document.getElementById("story").value.trim();
+
+        if (!title || !story) return;
+
+        document.getElementById("formMessage").textContent =
+          "Your preview is ready, but this demo does not send or save " +
+          "your confession. A secure submission service must be connected " +
+          "before visitors can submit stories.";
+      }
+    );
+  </script>
+</body>
+</html>
